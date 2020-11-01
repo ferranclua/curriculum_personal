@@ -1,0 +1,275 @@
+/* Estilos principales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+      font-size: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Menu de navegacion */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #97cadd;
+    top: 0;
+    transition: top 0.4s;
+    position: fixed;
+}
+
+.logo a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+.logo a:hover {
+    cursor: pointer;  
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;  
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-links a::after{
+    content:''; 
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: black;
+    transition: width .3s;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Apartado presentación */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > div{
+    height: 720px;
+}
+
+.contenedor{
+    position: fixed;
+    flex: 75%;
+    position: relative;
+    overflow: hidden;
+    line-height: 75px;
+}
+
+.parallax{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 120vh;  
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.9)
+        )
+    ,url(../img/ordenador.jpg);
+}
+
+.name { 
+    color: white;
+    margin-top: 37%;
+    margin-left: 20%;
+}
+
+.name h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 15PX;
+}
+
+.name h1 {
+    font-size: 90px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5PX;
+}
+
+.info {
+    text-align: center;
+    flex: 25%;
+    background-color: #97cadd;
+    color: black;
+    padding-top: 70px;
+}
+
+.info h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    letter-spacing: 4PX;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-top: 50px;
+}
+
+.ferran {
+    height: 140px;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+.eng, .cat, .esp {
+    margin: 25px;
+    margin-top: 55px;
+    width: 50px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .flex-container {   
+      flex-direction: column;
+    }
+  }
+
+/* Estilos generales para todos los apartados */
+
+.about h1, .learn h1, .work h1, .study h1, .skills h1{
+    font-size: 30px;
+    font-style: italic;
+    color: #0389be;
+}
+
+.about h2, .learn h2, .work h2, .study h2, .skills h2{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #0389be;
+    
+}
+
+.about p, .skills p {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* Apartado 'About' */
+
+.about {
+    padding: 70px;
+    padding-left: 200px;
+    padding-right: 400px;
+    background-color: #d6e7ee;
+}
+
+/* Apartado 'Education & Experience' */
+
+.flex-learn {
+    display: flex;
+    align-items: stretch;
+}
+
+.flex-learn > div{
+    width: 50%;
+    padding: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.study h3, .work h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.work span, .study span {
+    font-weight: lighter;
+}
+
+.work p, .study p {
+    margin: 15px;
+}
+
+/*Apartado 'Skills & Lenguages' */
+
+.skills {
+    padding: 70px;
+    padding-left: 200px;
+    padding-right: 400px;
+    background-color: #d6e7ee;
+}
+
+.skills p {
+    margin-bottom: 10px;
+}
+
+.leng {
+    margin-top: 50px;
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    border: 1px inset #666;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+}
+
+progress::-moz-progress-bar{
+    background: #04467c;
+    border-radius : 20px;
+    border-right:1px inset #666;
+}
+
+progress::-webkit-progress-value {
+    background: #04467c;
+    border-radius : 20px;  
+    border-right: 1px inset #666;
+}
+ 
+progress::-webkit-progress-bar {
+    background-color: #D8D8D8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius: 20px ;         
+}
