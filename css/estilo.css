@@ -208,6 +208,7 @@ nav{
 .flex-learn {
     display: flex;
     align-items: stretch;
+    background-color: white;
 }
 
 .flex-learn > div{
