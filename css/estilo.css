@@ -196,7 +196,7 @@ nav{
     }
     
     .photo {
-        background-size: cover;
+        background-size: auto;
     }
 
     .name { 
