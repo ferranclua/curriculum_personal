@@ -196,6 +196,10 @@ nav{
         line-height: 60px;
         height: 250px;
     }
+    
+    .photo {
+        background-size: cover;
+    }
 
     .name { 
         margin-top: 15%;
