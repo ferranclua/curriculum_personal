@@ -1,0 +1,364 @@
+/* Estilos principales */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+footer {
+    background-color: #404040;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    line-height: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.sub {
+    color: #bcca9d
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        font-size: 12px;
+        padding: 25px;
+    }
+}
+
+/* Menu de navegacion */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    background-color: #404040;
+    top: 0;
+    transition: top 0.4s;
+    position: fixed;
+}
+
+.logo a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 5px;
+}
+
+.logo a:hover {
+    cursor: pointer;  
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;  
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-links a::after{
+    content:''; 
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/* Apartado presentación */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    flex: 70%;
+    position: relative;
+    line-height: 75px;
+    height: 720px;  
+}
+
+.photo {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.6)
+        )
+    ,url(../img/ordenador.jpg);  
+}
+
+.name { 
+    color: white;
+    margin-top: 37%;
+    margin-left: 20%;
+}
+
+.name h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 15PX;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.name h1 {
+    font-size: 90px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5PX;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.info {
+    text-align: center;
+    flex: 30%;
+    background-color: #404040;
+    color: white;
+    padding-top: 70px;
+}
+
+.info h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    letter-spacing: 4PX;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-top: 50px;
+}
+
+.ferran {
+    height: 140px;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+.eng, .cat, .esp {
+    margin: 25px;
+    margin-top: 55px;
+    width: 50px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .flex-container {   
+      flex-direction: column;
+    }
+
+    .contenedor{
+        flex: 100%;
+        line-height: 60px;
+        height: 250px;
+    }
+
+    .name { 
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+
+    .name h2 {
+        font-size: 20px;
+    }
+
+    .name h1 {
+        font-size: 60px;
+    }
+
+    .info {
+        flex: 100%;
+        padding-top: 10px;
+    }
+
+    .info p {
+        margin-top: 20px;
+    }
+
+    .ferran {
+        height: 100px;
+    }
+    
+    .eng, .cat, .esp {
+        margin-top: 45px;
+        padding-bottom: 20px;
+        width: 40px;
+    }
+}
+
+/* Estilos generales para todos los apartados */
+
+.about h1, .learn h1, .work h1, .study h1, .skills h1{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+}
+
+.about p, .skills p {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+/* Apartado 'About' */
+
+.about {
+    padding: 70px;
+    padding-left: 200px;
+    padding-right: 400px;
+    background-color: #d7e3bd;
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        padding: 30px;
+    }
+
+    .about p, .skills p {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+
+/* Apartado 'Education & Experience' */
+
+.flex-learn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: white;
+}
+
+.flex-learn > div{
+    width: 50%;
+    padding: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.study h3, .work h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    color: #bcca9d;
+}
+
+.work span, .study span {
+    font-weight: lighter;
+}
+
+.work p, .study p {
+    margin: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-learn {
+        flex-direction: column;
+    }
+    
+    .flex-learn > div{
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+/*Apartado 'Skills & Lenguages' */
+
+.skills {
+    padding: 70px;
+    padding-left: 200px;
+    padding-right: 400px;
+    background-color: #f1f1f1;
+}
+
+.skills p {
+    margin-bottom: 10px;
+}
+
+.leng {
+    margin-top: 50px;
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 18px;
+    overflow: hidden;
+    border: 1px inset #666;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+}
+
+progress::-moz-progress-bar{
+    background: #bcca9d;
+    border-radius : 20px;
+    border-right:1px inset #666;
+}
+
+progress::-webkit-progress-value {
+    background: #bcca9d;
+    border-radius : 20px;  
+    border-right: 1px inset #666;
+}
+ 
+progress::-webkit-progress-bar {
+    background-color: #D8D8D8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; /*esta sombra es para simular el borde que he aplicado arriba para Mozilla*/
+    border-radius: 20px ;         
+}
+
+@media screen and (max-width: 800px) {
+    .skills {
+        padding: 30px;
+    }
+
+    progress {
+        height: 12px;
+    }
+}
