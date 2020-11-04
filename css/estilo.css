@@ -116,8 +116,7 @@ nav{
 .contenedor{
     flex: 70%;
     position: relative;
-    line-height: 75px;
-    height: 720px;  
+    line-height: 75px; 
 }
 
 .photo {
@@ -194,7 +193,6 @@ nav{
     .contenedor{
         flex: 100%;
         line-height: 60px;
-        height: 250px;
     }
     
     .photo {
