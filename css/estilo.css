@@ -191,8 +191,11 @@ nav{
     }
 
     .contenedor{
-        height: 0%;
-        widht: 0%;
+        display: none;
+    }
+    
+    .photo {
+        display: none;
     }
 
     .info {
