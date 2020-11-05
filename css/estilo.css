@@ -114,7 +114,7 @@ nav{
 }
 
 .contenedor{
-    flex: 70%;
+    flex: 75%;
     position: relative;
     line-height: 75px; 
 }
@@ -155,7 +155,7 @@ nav{
 
 .info {
     text-align: center;
-    flex: 30%;
+    flex: 25%;
     background-color: #404040;
     color: white;
     padding-top: 70px;
