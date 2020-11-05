@@ -193,10 +193,6 @@ nav{
     .contenedor{
         display: none;
     }
-    
-    .photo {
-        display: none;
-    }
 
     .info {
         flex: 100%;
