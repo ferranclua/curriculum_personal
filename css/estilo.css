@@ -54,7 +54,7 @@ footer a {
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     min-height: 10vh;
     width: 100%;
@@ -69,7 +69,6 @@ nav{
     color: white;
     text-decoration: none;
     letter-spacing: 5px;
-    margin-left: 50px;
 }
 
 .logo a:hover {
@@ -78,7 +77,7 @@ nav{
 
 .nav-links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 45%;  
 }
 
