@@ -9,7 +9,7 @@
     font-size: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     * {
         font-size: 13px;
     }
@@ -43,7 +43,7 @@ footer a {
     color: #bcca9d
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     footer {
         font-size: 12px;
         padding: 25px;
@@ -106,7 +106,7 @@ nav{
     transition: width .3s;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     nav {
         display: none;
     }
@@ -191,7 +191,7 @@ nav{
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .flex-container {   
       flex-direction: column;
     }
@@ -243,7 +243,7 @@ nav{
     background-color: #d7e3bd;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .about {
         padding: 30px;
     }
@@ -285,7 +285,7 @@ nav{
     margin: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .flex-learn {
         flex-direction: column;
     }
@@ -344,7 +344,7 @@ progress::-webkit-progress-bar {
     border-radius: 20px ;         
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .skills {
         padding: 30px;
     }
