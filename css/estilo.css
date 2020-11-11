@@ -69,6 +69,7 @@ nav{
     color: white;
     text-decoration: none;
     letter-spacing: 5px;
+    margin-left: 50px;
 }
 
 .logo a:hover {
