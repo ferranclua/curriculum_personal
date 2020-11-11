@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+</head>
+
+<body>
+    <!-- Header donde hay la barra de navegación de la web -->
+    <header>
+		<nav id="navbar">
+            <div class="logo">
+                <h4><a href="#">&#8249CLUA&#8250</a></h4>
+            </div>
+			<div class="nav-links">
+				<a href="#about">Sobre mi</a>
+				<a href="#education">Educació i Experiència</a>
+                <a href="#skills">Habilitats i idiomes</a>
+            </div>
+		</nav>
+    </header>
+
+    <script src="/js/navegacion.js"></script>
+
+    <!-- Portada de la web, donde hay la imagen y la información principal -->
+    <section class="flex-container">
+        <div class="contenedor">
+            <div class="photo"></div>
+            <div class="name">
+                <h2>HOLA, SOC EN</h2>
+                <h1>Ferran Clua</h1>
+            </div>
+        </div>
+        <div class="info"> 
+            <img src="./img/ferran2.jpeg" alt="Imagen propia" class="ferran">
+            <h1>Ferran Clua</h1>
+            <span>25/11/1999</span>
+            <p>Desenvolupador Júnior <br>
+                Sant Fruitós de Bages, Barcelona</p>
+            <p>ferracv@hotmail.com <br>
+                617660525</p>
+            <a title="English" href="cv_eng.html"><img src="/img/eng.png" alt="English" class="eng"/></a>
+            <a title="Spanish" href="index.html"><img src="/img/esp.png" alt="Spanish" class="esp"/></a>
+        </div>
+    </section>
+    <script src="/js/parallax.js"></script>
+
+    <!-- Apartado 'About' de la web -->
+    <section class="about" id="about">
+        <h1>Sobre mi</h1>
+        <p>Sóc un desenvolupador junior amb una passió per la programació, el desenvolupament i tot el relacionat amb el software. M'agradaria 
+            treballar en una empresa d’aquest sector, especialment per aprendre.</p>
+    </section>
+
+    <section class="flex-learn" id="education">
+        <div class="work">
+            <h1>Experiència</h1>
+            <!-- Briction S.L. -->
+            <h3>Briction S.L. - Auxiliar Administratiu</h3>
+            <span>Nov 18 - Jul 19</span>
+            <p>Manteniment d’una APP, diferents tasques informàtiques, arxivar documents i factures ...</p>
+            <!-- Nat's -->
+            <h3>Nat's - Monitor</h3>
+            <span>Jun 17 - Ago 17</span>
+            <p>Cuidar i realitzar activitats lúdiques amb nois i noies d'entre 3 i 12 anys.</p>
+            <!-- Ampans -->
+            <h3>Garden AMPANS - Voluntari</h3>
+            <span>Mai 15 - Jun 15</span>
+            <p>Activitats recreatives i esports amb persones amb discapacitat.</p>
+        </div>
+        <div class="study">
+            <h1>Educació</h1>
+            <!-- UOC -->
+            <h3>Grau de Multimèdia</h3>
+            <span>Set 19 - Act</span>
+            <p>UOC - Barcelona</p>
+            <!-- CFGS -->
+            <h3>Desenvolupament d'aplicacions multiplataforma</h3>
+            <span>Set 17 - Jul 19</span>
+            <p>Joviat - Manresa</p>
+            <!-- Bachillerato -->
+            <h3>Batxillerat Tecnològic</h3>
+            <span>Set 15 - Jun 17</span>
+            <p>INS Gerbert d'Aurillac - Sant Fruitós de Bages</p>
+            <!-- ESO -->
+            <h3>ESO</h3>
+            <span>Set 11 - Jun 15</span>
+            <p>INS Gerbert d'Aurillac - Sant Fruitós de Bages</p>
+        </div>
+    </section>
+
+    <!-- Apartado 'Skills' de la web -->
+    <section class="skills" id="skills">
+        <h1>Habilitats</h1>
+
+        <p>HTML5</p>
+        <progress id="html5" max="100" value="75"></progress>
+
+        <p>CSS3</p>
+        <progress id="css3" max="100" value="70"></progress>
+
+        <p>Java</p>
+        <progress id="java" max="100" value="55"></progress>
+
+        <p>XML</p>
+        <progress id="xml" max="100" value="60"></progress>
+
+        <p>SQL</p>
+        <progress id="sql" max="100" value="55"></progress>
+
+        <p>C#</p>
+        <progress id="c#" max="100" value="45"></progress>
+
+        <p>Ofimàtica</p>
+        <progress id="c#" max="100" value="85"></progress>
+        
+        <h1 class="leng">Idiomes</h1>
+
+        <p>Català</p>
+        <progress id="catalan" max="100" value="100"></progress>
+
+        <p>Castellà</p>
+        <progress id="spanish" max="100" value="100"></progress>
+
+        <p>Anglès</p>
+        <progress id="english" max="100" value="70"></progress>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 - Ferran Clua Vila</p>
+        <p><span class="sub">-Direcció:</span> Carrer de Carles Buïgas, 82 <span class="sub"> -Telèfon:</span> <a href ="tel:617660525">617660525</a>
+            <span class="sub"> -Mail:</span> <a href="mailto:ferracv@hotmail.com">ferracv@hotmail.com</a></p>
+    </footer>
+</body>
+</html>
