@@ -234,6 +234,7 @@ nav{
 .about p, .skills p {
     margin-top: 45px;
     font-size: 20px;
+    text-align: justify;
 }
 
 /* Apartado 'About' */
